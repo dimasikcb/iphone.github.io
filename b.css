@@ -1,0 +1,395 @@
+@font-face {
+    font-family: 'Inter';
+    /*  Имя, которое ты будешь использовать в CSS */
+    src: url('/font/Inter-Regular.woff2') format('woff2');
+    /*  Правильный путь к файлу шрифта */
+    /*  Укажи вес шрифта (например, normal, bold, 400, 700) */
+
+    /*  Укажи стиль шрифта (normal, italic) */
+    font-display: swap;
+    /*  Необязательно, но рекомендуется для производительности */
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+body {
+    font-family: 'Inter';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: #0A0A0A;
+}
+
+/* HEADER */
+
+.header {
+    background-color: #0A0A0A;
+    padding: 33px 0 32px;
+    color: #717171;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+.phone {
+    flex-grow: 1;
+    flex-basis: 0;
+    text-align: right;
+}
+
+.menuAtm {
+    margin-right: 30px;
+
+}
+
+/* MAIN */
+
+.headline {
+    background-color: #F5F5F7;
+    text-align: center;
+    padding: 70px 0 40px;
+}
+
+.title {
+    text-transform: uppercase;
+    margin: 0 0 50px;
+    color: #490E84;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 77px;
+}
+
+.headlineImg {
+    margin-bottom: 25px;
+}
+
+.headlineBtn {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #490E84;
+    padding: 22px 117px 19px;
+    border-radius: 30px;
+}
+
+.new {
+    margin: 90px 0 150px;
+}
+.newTitle,
+.colorTitle {
+    margin: 0 0 50px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #717171;
+    font-size: 32px;
+    line-height: 39px;
+    font-weight: 700;
+}
+.newInfo {
+    display: flex;
+    align-items: center;
+}
+.newText p{
+    max-width: 560px;
+    margin: 0 0 30px;
+}
+.newText b {
+    max-width: 560px;
+    font-size: 20px;
+    line-height: 26px;
+    display: block;
+}
+.newInfo .imgNew {
+    margin-left: 190px;
+    
+}
+.color {
+    margin-bottom: 150px;
+}
+.colorList {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.colorItm img {
+margin-bottom: 20px;
+}
+.colorItm h3 {
+    font-size: 20px;
+    line-height: 26px;
+    margin: 0 0 10px;
+}
+.contactInner {
+    display: flex;
+}
+.contactForm {
+    width: 100%;
+    padding: 140px 99px;
+    background-color: #574B63;
+    color: #ffffff;
+    text-align: center;
+}
+.contactTitle {
+    margin: 0 0 60px;
+    text-transform: uppercase;
+    font-size: 32px;
+    line-height: 39px;
+}
+.contactInput {
+    padding: 10px 0;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: #574B63;
+}
+.contactInput::placeholder{
+    font-size: 14px;
+    line-height: 18px;
+    color: #ffffff;
+    opacity: .5;
+    font-family: 'Inter';
+    font-weight: 500;
+}
+.contactForm p{
+    opacity: 0.5;
+    text-align: center;
+    margin: 30px 0;
+}
+.contactForm button {
+    border: none;
+    text-transform: uppercase;
+    color: #490E84;
+    background-color: #ffffff;
+    border-radius: 30px;
+    padding: 16px 81px;
+    font-weight: 400;
+    cursor: pointer;
+}
+.footer{
+    background-color: #0A0A0A;
+}
+.footerInner{
+    color: #717171;
+    font-size: 24px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+.footerLink{
+    flex-basis: 0;
+    flex-grow: 1;
+}
+.btn{
+    display: none;
+}
+@media (max-width:1240px){
+   .contactInner{
+    display: block;
+   }
+   .contactForm{
+    width: auto;
+   }
+   .contImg{
+    width: 100%;
+}
+}
+
+@media (max-width:1030px){
+    .colorList{
+        flex-wrap: wrap;
+    }
+    .colorItm{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+@media (max-width:1000px) {
+.headlineImg{
+    max-width: 100%;
+}
+}
+.imgNew{
+    display: none;
+}
+.newText p,
+.newText b{
+    max-width: 100%;
+}
+
+
+@media (max-width:935px) {
+.footerInner{
+    flex-direction: column;
+}
+    .logo .logoImg{
+        padding: 18px 0;
+    }
+.btn{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    order: 1;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    position: relative;
+}
+.phone, .logo{
+    position: relative;
+}
+.phone{
+    text-align: center;
+}
+.btnU{
+position: absolute;
+left: 0;
+width: 100%;
+background-color: #fff;
+height: 2px;
+transition: 1s ease;
+}
+.btnU:nth-child(1){
+    top: 0;
+}
+.btnU:nth-child(2){
+top: 20px;
+}
+.btnU:nth-child(3){
+top: 20px;
+}
+.btnU:nth-child(4){
+top: 40px;
+}
+.menu{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: #0A0A0A;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: translateY(-100%);
+    transition: 1s ease;
+}
+.menuM .menu{
+    transform: translateY(0%);
+}
+.menuAtm{
+    padding: 30px 0;
+    font-size: 40px;
+}
+}
+@media (max-width:800px){
+    .newTitle, .colorTitle{
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+}
+@media (max-width:640px) {
+    .title{
+        font-size: 25px;
+        line-height: 39px;
+    }
+    .contactForm{
+        padding: 120px 80px;
+    }
+    .newTitle, .colorTitle, .contactTitle{
+        font-size: 27px;
+    line-height: 31px;
+    }
+    .headlineBtn {
+        font-size: 16px;
+        line-height: 20px;
+        padding: 16px 70px 16px;
+        border-radius: 20px;
+    }
+    .headlineImg{
+        max-width: 70%;
+    }
+    .colorItm,
+    .colorItm img{
+        width: 100%;
+    }
+}
+@media (max-width:539px){
+    .contactForm{
+        padding: 80px 60px;
+    }
+}
+@media (max-width:498px){
+    .contactForm{
+        padding: 50px 40px;
+    }
+
+}
+@media (max-width:420px){
+    .nav{
+        flex-wrap: wrap;
+    }
+    .phone{
+        flex-basis: auto;
+        margin-top: 50px;
+        order: 3;
+        width: 100%;
+    }
+    .menuAtm{
+        font-size: 30px;
+    }
+    .footerInner{
+        font-size: 15px;
+    }
+}
+.menuM .btnU:nth-child(1){
+    transform: scaleX(0);
+}
+.menuM .btnU:nth-child(2){
+    transform: rotate(45deg);
+    
+}
+.menuM .btnU:nth-child(3){
+    transform: rotate(-45deg);
+    
+}
+.menuM .btnU:nth-child(4){
+    transform: scaleX(0);   
+}
+#r{
+    margin: 0;
+}
