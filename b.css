@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Inter';
     /*  Имя, которое ты будешь использовать в CSS */
-    src: url('/font/Inter-Regular.woff2') format('woff2');
+    src: url('font/Inter-Regular.woff2') format('woff2');
     /*  Правильный путь к файлу шрифта */
     /*  Укажи вес шрифта (например, normal, bold, 400, 700) */
 
