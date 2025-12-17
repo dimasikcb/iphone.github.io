@@ -1,13 +1,9 @@
-@font-face {
-    font-family: 'Inter';
-    /*  Имя, которое ты будешь использовать в CSS */
-    src: url('/font/Inter-Regular.woff2') format('woff2');
-    /*  Правильный путь к файлу шрифта */
-    /*  Укажи вес шрифта (например, normal, bold, 400, 700) */
-
-    /*  Укажи стиль шрифта (normal, italic) */
-    font-display: swap;
-    /*  Необязательно, но рекомендуется для производительности */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+html {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 a {
@@ -393,3 +389,4 @@ top: 40px;
 #r{
     margin: 0;
 }
+
